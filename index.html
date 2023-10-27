@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="music-player">
+      <audio src="./Tamil - BGM (1).mp3" id="song"></audio>
+
+
+      <div class="controls" data-volume-level="muted">
+        <div class="inside-btn">
+          <div onclick="playbrwd()"><i class="fa-solid fa-backward-fast" id="ctrlback"></i></div>
+          <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+          <div onclick="playfrwd()"><i class="fa-solid fa-forward-fast" id="ctrlforw"></i></i></div>
+          <span id="timer" class="timer">00:00</span>
+          <div>
+            <input type="range" min="0" max="50" value="0" id="progress" class="range-input">
+          </div>
+          
+
+          <span id="duration">00:00</span>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
